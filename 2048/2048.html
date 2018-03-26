@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .wrapper{
+            text-align:center;
+            margin-top:100px;
+        }
+        .wrapper #cv{
+            border:1px solid #ccc;
+        }
+        .info{
+            text-align: center;
+            font-size: 20px;
+            color: red;
+            font-weight: 500;
+        }
+        .ctrl{
+            margin: 0 auto;
+            width: 400px;
+            height:50px;
+            display: flex;
+            font-weight: 300;
+            font-size: 16px;
+        }
+        .ctrl .btn{
+            cursor: pointer;
+            flex: 1;
+            margin: 10px;
+            height: 50px;
+            box-shadow: 0 0 -1px 25px #222 inset;
+            transition: all .2s linear;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ctrl .btn:hover{
+            color: white;
+            box-shadow:0 0 1px 25px #222 inset;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="info">
+        最高分:&nbsp;&nbsp;<span id="score"></span>
+    </div>
+    <canvas height="400" width="400" id="cv"></canvas>
+    <div class="ctrl">
+        <a class="btn" id="reStart">重新开始</a>
+        <a class="btn" id="clear">清除记录</a>
+    </div>
+</div>
+<script src="2048.js"></script>
+<script src="init.js"></script>
+</body>
+</html>
